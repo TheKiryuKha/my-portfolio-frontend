@@ -139,24 +139,6 @@ html {
     transition: all .3s;
 }
 
-.view-github {
-    font-size: 2rem;
-    color: gray;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    transition: all .3s;
-
-}
-
-.view-github:hover {
-    transform: scale(1.1);
-    color: #02aab0;
-    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 10s infinite linear;
-}
-
 .skills-icon:hover {
     transform: scale(1.1);
     color: #02aab0;
@@ -176,6 +158,31 @@ html {
 .card {
     border-radius: 5px;
     background-color: #181818;
+
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1; 
+}
+
+.view-github {
+    font-size: 2rem;
+    color: gray;
+    transition: all .3s;
+    position: static; 
+}
+
+.view-github:hover {
+    transform: scale(1.1);
+    color: #02aab0;
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
 }
 
 .card-text {
